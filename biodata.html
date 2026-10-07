@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1520">
+  <meta name="description" content="Biodata of Md. Rokon Yeamony Shafin — Computer Science and Engineering student, software builder, and electronics enthusiast.">
+  <title>Md. Rokon Yeamony Shafin — Biodata</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      color-scheme:light;
+      --ink:#0f1721;
+      --ink-2:#1e2a3a;
+      --muted:#4a5768;
+      --muted-2:#6b7789;
+      --soft:#9099a8;
+      --line:#e2e7ee;
+      --line-2:#eef1f6;
+      --paper:#ffffff;
+      --paper-2:#f7f9fc;
+      --paper-3:#eef3fa;
+      --accent:#c2410c;
+      --accent-soft:#fde8dc;
+      --accent-2:#1e40af;
+      --accent-2-soft:#e0e7ff;
+      --accent-3:#047857;
+      --accent-3-soft:#d1fae5;
+      --rule:#0f1721;
+      --sans:'Inter',system-ui,-apple-system,sans-serif;
+      --serif:'Fraunces',Georgia,serif;
+      --mono:'JetBrains Mono',ui-monospace,monospace;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{background:#dfe4eb}
+    body{
+      font:7.5px/1.5 var(--sans);
+      color:var(--ink);
+      -webkit-font-smoothing:antialiased;
+      font-feature-settings:"ss01","cv11","tnum";
+    }
+
+    /* Toolbar */
+    .toolbar{
+      width:min(210mm,calc(100% - 32px));
+      margin:22px auto 12px;
+      display:flex;gap:10px;align-items:center;flex-wrap:wrap
+    }
+    .toolbar-hint{color:#4a5768;font-size:11px;margin-right:auto;line-height:1.5}
+    .toolbar-hint code{background:#fff;padding:1px 6px;border-radius:4px;font-family:var(--mono);font-size:10px;border:1px solid #dde3eb}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 16px;border:0;border-radius:999px;
+      font:600 12px var(--sans);cursor:pointer;text-decoration:none;
+      background:#0d1520;color:#fff;transition:background .15s
+    }
+    .btn:hover{background:#1d2a3d}
+    .btn.blue{background:#1e40af}
+    .btn.blue:hover{background:#1e3a8a}
+
+    /* Page sheet */
+    .sheet{
+      width:210mm;
+      min-height:297mm;
+      margin:0 auto 26px;
+      padding:13mm 14mm 14mm;
+      background:var(--paper);
+      box-shadow:0 20px 60px rgba(15,23,33,.14), 0 2px 6px rgba(15,23,33,.05);
+      position:relative;
+      overflow:hidden;
+    }
+    .sheet::before{
+      content:"";
+      position:absolute;top:0;left:0;right:0;
+      height:5px;
+      background:
+        linear-gradient(90deg,
+          var(--accent) 0%,
+          var(--accent) 33%,
+          var(--accent-2) 33%,
+          var(--accent-2) 66%,
+          var(--accent-3) 66%,
+          var(--accent-3) 100%);
+    }
+
+    .corner-tag{
+      position:absolute;top:8mm;right:14mm;
+      font:600 6.5px var(--mono);
+      letter-spacing:.16em;text-transform:uppercase;
+      color:var(--soft)
+    }
+
+    /* Masthead */
+    .masthead{
+      display:grid;
+      grid-template-columns:23mm 1fr 56mm;
+      gap:6mm;
+      align-items:center;
+      padding-bottom:5mm;
+      border-bottom:2.5px solid var(--rule);
+      margin-bottom:5mm;
+    }
+    .avatar-wrap{
+      position:relative;
+      width:23mm;height:29mm;
+    }
+    .avatar-wrap img{
+      width:100%;height:100%;
+      object-fit:cover;object-position:center 22%;
+      border-radius:2.5mm;
+      background:var(--paper-3);
+      display:block;
+      box-shadow:0 4px 14px rgba(15,23,33,.14);
+    }
+    .avatar-wrap::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:2.5mm;
+      box-shadow:inset 0 0 0 1px rgba(15,23,33,.08);
+      pointer-events:none;
+    }
+    .avatar-accent{
+      position:absolute;
+      left:-2.5mm;bottom:-2.5mm;
+      width:23mm;height:29mm;
+      border-radius:2.5mm;
+      background:var(--accent);
+      z-index:-1;
+    }
+
+    .title-block{min-width:0}
+    .title-eyebrow{
+      font:600 6.5px var(--mono);
+      letter-spacing:.2em;text-transform:uppercase;
+      color:var(--accent);
+      margin-bottom:2.5mm;
+    }
+    .title-name{
+      font:600 23px/.95 var(--serif);
+      letter-spacing:-.035em;
+      color:var(--ink);
+      margin-bottom:1.4mm;
+    }
+    .title-name em{
+      font-style:italic;
+      font-weight:500;
+      color:var(--accent-2);
+    }
+    .title-role{
+      font:500 9px/1.3 var(--sans);
+      color:var(--ink-2);
+      margin-bottom:1.8mm;
+      letter-spacing:-.008em;
+    }
+    .title-tagline{
+      font:500 7.5px/1.4 var(--mono);
+      color:var(--muted-2);
+      letter-spacing:.01em;
+    }
+
+    .contact-stack{
+      display:grid;gap:2mm;
+      text-align:right;
+    }
+    .contact-line{
+      display:flex;flex-direction:column;gap:1.5px;
+      font-size:7px;line-height:1.35;
+    }
+    .contact-line .label{
+      font:600 6px var(--mono);
+      letter-spacing:.14em;text-transform:uppercase;
+      color:var(--soft);
+    }
+    .contact-line a,.contact-line span{
+      color:var(--ink-2);
+      overflow-wrap:anywhere;
+      word-break:break-word;
+      font-weight:500;
+    }
+    .contact-line a:hover{color:var(--accent-2)}
+
+    /* Intro band */
+    .intro-band{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:9mm;
+      align-items:start;
+      padding:3.5mm 4mm;
+      background:var(--paper-2);
+      border-radius:2mm;
+      border-left:3px solid var(--accent);
+      margin-bottom:5mm;
+    }
+    .intro-band p{
+      font:400 8.5px/1.55 var(--sans);
+      color:var(--muted);
+      max-width:135mm;
+    }
+    .intro-band p strong{color:var(--ink);font-weight:600}
+    .intro-stamp{
+      text-align:right;
+      font:600 7px var(--mono);
+      letter-spacing:.14em;text-transform:uppercase;
+      color:var(--accent-2);
+      white-space:nowrap;
+      padding-top:1mm;
+    }
+
+    /* Two-column grid */
+    .layout{
+      display:grid;
+      grid-template-columns:54mm 1fr;
+      gap:8mm;
+    }
+    .sidebar,.main{min-width:0}
+
+    /* Sidebar */
+    .side-block{margin-bottom:4.5mm}
+    .side-block:last-child{margin-bottom:0}
+
+    .side-head{
+      display:flex;align-items:center;gap:2.5mm;
+      margin-bottom:2.5mm;
+      padding-bottom:1.5mm;
+      border-bottom:1px solid var(--line);
+    }
+    .side-head .num{
+      display:inline-grid;place-items:center;
+      width:4.5mm;height:4.5mm;
+      background:var(--ink);color:#fff;
+      border-radius:1.2mm;
+      font:600 6px var(--mono);
+      letter-spacing:.02em;
+    }
+    .side-head h2{
+      font:600 8.5px/1 var(--sans);
+      letter-spacing:.14em;text-transform:uppercase;
+      color:var(--ink);
+    }
+
+    .skill-group{margin-bottom:2.5mm}
+    .skill-group:last-child{margin-bottom:0}
+    .skill-label{
+      display:flex;align-items:center;gap:2mm;
+      font:600 6px var(--mono);
+      letter-spacing:.1em;text-transform:uppercase;
+      color:var(--muted-2);
+      margin-bottom:1.5mm;
+    }
+    .skill-label::after{
+      content:"";flex:1;height:1px;
+      background:var(--line-2)
+    }
+    .chips{display:flex;flex-wrap:wrap;gap:3px}
+    .chips span{
+      display:inline-flex;align-items:center;
+      padding:2px 6px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:3px;
+      font:500 6.5px/1.2 var(--sans);
+      color:var(--ink-2);
+      letter-spacing:-.002em;
+    }
+
+    .contact-table{display:grid;gap:2mm}
+    .contact-table .row{
+      display:grid;
+      grid-template-columns:15mm 1fr;
+      gap:2.5mm;
+      align-items:baseline;
+      padding-bottom:1.8mm;
+      border-bottom:1px dashed var(--line-2);
+    }
+    .contact-table .row:last-child{border-bottom:0;padding-bottom:0}
+    .contact-table .k{
+      font:600 6px var(--mono);
+      letter-spacing:.1em;text-transform:uppercase;
+      color:var(--soft);
+    }
+    .contact-table .v{
+      font:500 7px/1.4 var(--sans);
+      color:var(--ink-2);
+      overflow-wrap:anywhere;
+      word-break:break-word;
+    }
+    .contact-table .v a:hover{color:var(--accent-2)}
+
+    .personal-table{display:grid;gap:1.8mm}
+    .personal-table .row{
+      display:grid;
+      grid-template-columns:19mm 1fr;
+      gap:2.5mm;
+      align-items:baseline;
+    }
+    .personal-table .k{
+      font:600 6px var(--mono);
+      letter-spacing:.1em;text-transform:uppercase;
+      color:var(--soft);
+      padding-top:.5mm;
+    }
+    .personal-table .v{
+      font:500 7.5px/1.4 var(--sans);
+      color:var(--ink-2)
+    }
+
+    .lang-list{display:grid;gap:2mm}
+    .lang-row{display:grid;grid-template-columns:1fr auto;gap:3mm;align-items:center}
+    .lang-row .name{
+      font:500 7.5px var(--sans);
+      color:var(--ink-2)
+    }
+    .lang-row .level{
+      font:500 6.5px var(--mono);
+      color:var(--muted-2);
+      letter-spacing:.05em
+    }
+    .lang-bar{
+      grid-column:1/-1;
+      height:2.5px;
+      background:var(--paper-3);
+      border-radius:999px;
+      overflow:hidden;
+      margin-top:1mm
+    }
+    .lang-bar i{
+      display:block;height:100%;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      border-radius:999px
+    }
+
+    /* Main */
+    .main-block{margin-bottom:4.5mm}
+    .main-block:last-child{margin-bottom:0}
+
+    .main-head{
+      display:flex;align-items:center;gap:3mm;
+      margin-bottom:2.5mm;
+      padding-bottom:1.5mm;
+      border-bottom:1.5px solid var(--rule);
+    }
+    .main-head .num{
+      display:inline-grid;place-items:center;
+      width:5mm;height:5mm;
+      background:var(--accent);color:#fff;
+      border-radius:1.2mm;
+      font:600 6.5px var(--mono);
+    }
+    .main-head h2{
+      font:600 9.5px/1 var(--sans);
+      letter-spacing:.14em;text-transform:uppercase;
+      color:var(--ink);
+    }
+    .main-head .rule{
+      flex:1;height:1px;
+      background:var(--line-2)
+    }
+
+    .entry{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:2mm 5mm;
+      padding:0 0 2.8mm;
+      margin:0 0 2.8mm;
+      border-bottom:1px dashed var(--line-2);
+      break-inside:avoid;
+    }
+    .entry:last-child{padding-bottom:0;margin-bottom:0;border:0}
+    .entry-title{
+      font:600 9.5px/1.3 var(--sans);
+      color:var(--ink);
+      letter-spacing:-.01em
+    }
+    .entry-org{
+      grid-column:1;
+      font:500 7.5px/1.4 var(--sans);
+      color:var(--accent-2)
+    }
+    .entry-period{
+      grid-row:1;
+      font:600 6.5px var(--mono);
+      color:var(--muted-2);
+      letter-spacing:.06em;
+      white-space:nowrap;
+      padding-top:1mm
+    }
+    .entry-detail{
+      grid-column:1/-1;
+      font:400 7.5px/1.5 var(--sans);
+      color:var(--muted);
+      margin-top:1mm
+    }
+
+    .project{
+      padding:0 0 2.8mm;
+      margin:0 0 2.8mm;
+      border-bottom:1px dashed var(--line-2);
+      break-inside:avoid;
+    }
+    .project:last-child{padding-bottom:0;margin-bottom:0;border:0}
+    .project-top{
+      display:flex;justify-content:space-between;
+      align-items:baseline;gap:4mm;
+      margin-bottom:1mm
+    }
+    .project-title{
+      font:600 9.5px/1.3 var(--sans);
+      color:var(--ink);
+      letter-spacing:-.01em
+    }
+    .project-status{
+      display:inline-flex;align-items:center;gap:1.3mm;
+      font:600 6px var(--mono);
+      letter-spacing:.08em;text-transform:uppercase;
+      color:var(--accent-3);
+      white-space:nowrap;
+      padding:.7mm 2.2mm;
+      background:var(--accent-3-soft);
+      border-radius:999px
+    }
+    .project-status::before{
+      content:"";width:4px;height:4px;border-radius:50%;
+      background:var(--accent-3)
+    }
+    .project-status.blue{color:var(--accent-2);background:var(--accent-2-soft)}
+    .project-status.blue::before{background:var(--accent-2)}
+    .project-status.orange{color:var(--accent);background:var(--accent-soft)}
+    .project-status.orange::before{background:var(--accent)}
+    .project-desc{
+      font:400 7.5px/1.5 var(--sans);
+      color:var(--muted);
+      margin-bottom:1.8mm
+    }
+    .project-meta{
+      display:flex;justify-content:space-between;
+      gap:4mm;align-items:flex-end;
+      flex-wrap:wrap
+    }
+    .stack{
+      font:500 6.5px/1.35 var(--mono);
+      color:var(--muted-2);
+      overflow-wrap:anywhere;
+      word-break:break-word
+    }
+    .project-links{
+      display:flex;gap:3mm;flex:none;
+      font:600 6.5px var(--mono);
+      color:var(--accent-2)
+    }
+    .project-links a:hover{color:var(--accent)}
+
+    .bullets{list-style:none;padding:0;margin:0;display:grid;gap:1.8mm}
+    .bullets li{
+      position:relative;
+      padding-left:5.2mm;
+      font:400 8px/1.5 var(--sans);
+      color:var(--muted)
+    }
+    .bullets li strong{color:var(--ink);font-weight:600}
+    .bullets li::before{
+      content:"";position:absolute;
+      left:0;top:1.8mm;
+      width:2.8mm;height:1px;
+      background:var(--accent)
+    }
+    .bullets li em{
+      font-style:normal;font-weight:600;
+      color:var(--accent-3);
+      padding:.5mm 2mm;
+      background:var(--accent-3-soft);
+      border-radius:2mm;
+      font-size:7px;
+      letter-spacing:.02em
+    }
+
+    .footer{
+      position:absolute;
+      left:14mm;right:14mm;bottom:8mm;
+      display:flex;justify-content:space-between;align-items:center;
+      padding-top:2.8mm;
+      border-top:1px solid var(--line);
+      font:500 6.5px var(--mono);
+      letter-spacing:.08em;text-transform:uppercase;
+      color:var(--soft)
+    }
+    .footer strong{color:var(--ink);font-weight:600}
+
+    .page2-header{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:9mm;
+      align-items:center;
+      padding-bottom:4.5mm;
+      border-bottom:2.5px solid var(--rule);
+      margin-bottom:5.5mm;
+    }
+    .page2-brand{
+      display:flex;align-items:baseline;gap:4mm
+    }
+    .page2-brand .mark{
+      display:inline-grid;place-items:center;
+      width:7mm;height:7mm;
+      background:var(--ink);color:#fff;
+      border-radius:1.6mm;
+      font:600 8px var(--mono);
+      letter-spacing:.02em
+    }
+    .page2-brand .name{
+      font:600 13px/1 var(--serif);
+      letter-spacing:-.02em;
+      color:var(--ink)
+    }
+    .page2-brand .name em{
+      font-style:italic;font-weight:500;
+      color:var(--accent-2)
+    }
+    .page2-meta{
+      text-align:right;
+      font:600 6.5px var(--mono);
+      letter-spacing:.14em;text-transform:uppercase;
+      color:var(--muted-2)
+    }
+    .page2-meta b{color:var(--ink);font-weight:600}
+
+    .reflect-grid{display:grid;gap:2.8mm}
+    .reflect{
+      display:grid;
+      grid-template-columns:auto 1fr;
+      gap:3.5mm;
+      padding:3mm 3.5mm;
+      background:var(--paper-2);
+      border-radius:2mm;
+      border-left:3px solid var(--accent-2);
+      break-inside:avoid
+    }
+    .reflect .reflect-num{
+      font:600 8.5px var(--mono);
+      color:var(--accent-2);
+      letter-spacing:.05em;
+      padding-top:.5mm
+    }
+    .reflect h3{
+      font:600 8.5px/1.3 var(--sans);
+      letter-spacing:.02em;
+      color:var(--ink);
+      margin-bottom:1.2mm
+    }
+    .reflect p{
+      font:400 7.5px/1.5 var(--sans);
+      color:var(--muted)
+    }
+
+    .dual-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:7mm
+    }
+
+    .signature{
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      gap:5.5mm;
+      align-items:end;
+      padding-top:4.5mm;
+      margin-top:4.5mm;
+      border-top:1px solid var(--line)
+    }
+    .sig-label{
+      font:600 6.5px var(--mono);
+      letter-spacing:.14em;text-transform:uppercase;
+      color:var(--soft);
+      margin-bottom:1.4mm
+    }
+    .sig-name{
+      font:600 11.5px/1 var(--serif);
+      letter-spacing:-.02em;
+      color:var(--ink)
+    }
+    .sig-name em{
+      font-style:italic;font-weight:500;
+      color:var(--accent-2)
+    }
+    .sig-line{
+      border-bottom:1px dashed var(--soft);
+      height:6.5mm;
+      margin-bottom:1.6mm
+    }
+    .sig-date{
+      font:500 7px var(--mono);
+      color:var(--muted-2);
+      letter-spacing:.05em;
+      text-align:right
+    }
+
+    /* Mobile */
+    @media(max-width:760px){
+      html{background:var(--paper)}
+      body{font-size:11px}
+      .toolbar{width:auto;margin:14px 18px;flex-wrap:wrap;gap:6px}
+      .toolbar-hint{width:100%;margin-bottom:4px}
+      .sheet{
+        width:100%;min-height:0;margin:0;
+        padding:26px 22px 32px;
+        box-shadow:none;border-radius:0
+      }
+      .masthead{
+        grid-template-columns:auto 1fr;
+        gap:5mm
+      }
+      .contact-stack{grid-column:1/-1;text-align:left}
+      .contact-line{flex-direction:row;align-items:baseline;gap:2mm}
+      .intro-band{grid-template-columns:1fr;padding:4mm}
+      .layout{grid-template-columns:1fr;gap:0}
+      .sidebar{display:grid;grid-template-columns:1fr 1fr;gap:0 8mm}
+      .dual-grid{grid-template-columns:1fr}
+      .signature{grid-template-columns:1fr;gap:3mm;text-align:left}
+      .footer{position:static;margin-top:8mm;flex-wrap:wrap;gap:2mm}
+      .title-name{font-size:24px}
+      .page2-header{grid-template-columns:1fr;gap:3mm}
+      .page2-meta{text-align:left}
+    }
+
+    /* ============ PRINT — locked to A4 ============ */
+    @page{size:A4 portrait;margin:0}
+    @media print{
+      html,body{
+        width:210mm;
+        margin:0;
+        padding:0;
+        background:#fff;
+        print-color-adjust:exact;
+        -webkit-print-color-adjust:exact;
+      }
+      body{font:7.5px/1.5 var(--sans)}
+
+      .toolbar{display:none !important}
+
+      .sheet{
+        width:210mm;
+        height:297mm;
+        min-height:297mm;
+        max-height:297mm;
+        margin:0;
+        padding:12mm 13mm 13mm;
+        box-shadow:none;
+        overflow:hidden;
+        position:relative;
+        page-break-after:always;
+        break-after:page;
+      }
+      .sheet:last-of-type{
+        page-break-after:auto;
+        break-after:auto;
+      }
+      .sheet::before{height:5px}
+
+      .masthead{
+        grid-template-columns:23mm 1fr 54mm;
+        gap:5.5mm;
+      }
+      .intro-band{
+        grid-template-columns:1fr auto;
+        gap:9mm;
+        padding:3.5mm 4mm;
+      }
+      .layout{
+        grid-template-columns:54mm 1fr;
+        gap:8mm;
+      }
+      .contact-stack{
+        text-align:right;
+      }
+      .dual-grid{
+        grid-template-columns:1fr 1fr;
+      }
+      .signature{
+        grid-template-columns:auto 1fr auto;
+      }
+      .page2-header{
+        grid-template-columns:1fr auto;
+      }
+      .reflect{
+        grid-template-columns:auto 1fr;
+      }
+      .footer{
+        position:absolute;
+        left:13mm;
+        right:13mm;
+        bottom:6mm;
+      }
+
+      .masthead{padding-bottom:4.5mm;margin-bottom:4.5mm}
+      .intro-band{margin-bottom:4.5mm}
+      .side-block{margin-bottom:4.5mm}
+      .main-block{margin-bottom:4.5mm}
+      .entry{padding-bottom:2.8mm;margin-bottom:2.8mm}
+      .project{padding-bottom:2.8mm;margin-bottom:2.8mm}
+      .reflect{padding:3mm 3.5mm}
+      .reflect-grid{gap:2.8mm}
+      .signature{padding-top:4.5mm;margin-top:4.5mm}
+      .sig-line{height:6.5mm}
+      .section-heading,.side-head,.main-head{margin-bottom:2.5mm;padding-bottom:1.5mm}
+
+      .entry,
+      .project,
+      .side-block,
+      .main-block,
+      .reflect,
+      .signature,
+      .masthead,
+      .intro-band,
+      .page2-header{
+        break-inside:avoid;
+        page-break-inside:avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <span class="toolbar-hint">After editing: press <strong>Print / Save as PDF</strong>, then overwrite <code>biodata.pdf</code> in your folder. Use <strong>Margins: Default</strong>, <strong>Scale: 100%</strong>.</span>
+    <a class="btn blue" href="biodata.pdf" download>Download A4 PDF</a>
+    <button class="btn" type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <!-- ================= PAGE 1 ================= -->
+  <main class="sheet">
+    <div class="corner-tag">Biodata · 2026</div>
+
+    <header class="masthead">
+      <div class="avatar-wrap">
+        <div class="avatar-accent"></div>
+        <img src="assets/profile.jpg" alt="Md. Rokon Yeamony Shafin">
+      </div>
+      <div class="title-block">
+        <div class="title-eyebrow">Computer Science &amp; Engineering · DIU</div>
+        <h1 class="title-name">Md. Rokon Yeamony <em>Shafin</em></h1>
+        <div class="title-role">Software builder · Algorithms · Practical electronics</div>
+        <div class="title-tagline">Student ID 252-15-447 · Semester 5 · Dhaka, Bangladesh</div>
+      </div>
+      <div class="contact-stack" aria-label="Contact">
+        <div class="contact-line">
+          <span class="label">Email</span>
+          <a href="mailto:shafinahosan111@gmail.com">shafinahosan111@gmail.com</a>
+        </div>
+        <div class="contact-line">
+          <span class="label">GitHub</span>
+          <a href="https://github.com/rokon-shafin2974">github.com/rokon-shafin2974</a>
+        </div>
+        <div class="contact-line">
+          <span class="label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/md-rokon-yeamony-shafin-a51825408/">linkedin.com/in/md-rokon-yeamony-shafin</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro-band">
+      <p><strong>CSE student at Daffodil International University</strong> who learns by building. I apply programming and algorithm fundamentals to working software and electronics projects — from a deployed evaluation platform to a C++20 Huffman workbench and an Arduino digital ammeter. I document honest project status and enjoy turning ideas into things people can actually try.</p>
+      <div class="intro-stamp">Bio<br>01</div>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="side-block">
+          <div class="side-head"><span class="num">01</span><h2>Skills</h2></div>
+          <div class="skill-group">
+            <div class="skill-label">Programming</div>
+            <div class="chips"><span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span></div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">CS foundations</div>
+            <div class="chips"><span>OOP</span><span>Data structures</span><span>Algorithms</span><span>Complexity</span></div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Web &amp; data</div>
+            <div class="chips"><span>HTML</span><span>CSS</span><span>Flask</span><span>PostgreSQL</span><span>REST APIs</span></div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Tools</div>
+            <div class="chips"><span>Git</span><span>GitHub</span><span>Linux</span><span>CMake</span><span>Render</span><span>Neon</span><span>Cloudinary</span></div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Electronics</div>
+            <div class="chips"><span>Arduino</span><span>ADS1115</span><span>HC-05 / 06</span><span>Relays</span></div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Design</div>
+            <div class="chips"><span>Graphic design</span></div>
+          </div>
+        </section>
+
+        <section class="side-block">
+          <div class="side-head"><span class="num">02</span><h2>Personal</h2></div>
+          <div class="personal-table">
+            <div class="row"><span class="k">Full name</span><span class="v">Md. Rokon Yeamony Shafin</span></div>
+            <div class="row"><span class="k">Student ID</span><span class="v">252-15-447</span></div>
+            <div class="row"><span class="k">University</span><span class="v">Daffodil International University</span></div>
+            <div class="row"><span class="k">Department</span><span class="v">Computer Science &amp; Engineering</span></div>
+            <div class="row"><span class="k">Semester</span><span class="v">5 (ongoing)</span></div>
+            <div class="row"><span class="k">Location</span><span class="v">Dhaka, Bangladesh</span></div>
+          </div>
+        </section>
+
+        <section class="side-block">
+          <div class="side-head"><span class="num">03</span><h2>Languages</h2></div>
+          <div class="lang-list">
+            <div class="lang-row"><span class="name">Bengali</span><span class="level">Native</span><span class="lang-bar"><i style="width:100%"></i></span></div>
+            <div class="lang-row"><span class="name">English</span><span class="level">Working</span><span class="lang-bar"><i style="width:82%"></i></span></div>
+            <div class="lang-row"><span class="name">Hindi</span><span class="level">Conversational</span><span class="lang-bar"><i style="width:55%"></i></span></div>
+          </div>
+        </section>
+
+        <section class="side-block">
+          <div class="side-head"><span class="num">04</span><h2>Contact</h2></div>
+          <div class="contact-table">
+            <div class="row"><span class="k">Email</span><span class="v"><a href="mailto:shafinahosan111@gmail.com">shafinahosan111@gmail.com</a></span></div>
+            <div class="row"><span class="k">GitHub</span><span class="v"><a href="https://github.com/rokon-shafin2974">rokon-shafin2974</a></span></div>
+            <div class="row"><span class="k">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/md-rokon-yeamony-shafin-a51825408/">md-rokon-yeamony-shafin</a></span></div>
+            <div class="row"><span class="k">Portfolio</span><span class="v"><a href="index.html">View portfolio</a></span></div>
+          </div>
+        </section>
+
+        <section class="side-block">
+          <div class="side-head"><span class="num">05</span><h2>Practice</h2></div>
+          <div class="personal-table">
+            <div class="row"><span class="k">Beecrowd</span><span class="v">30+ solved</span></div>
+            <div class="row"><span class="k">Focus</span><span class="v">DSA for coding rounds</span></div>
+          </div>
+        </section>
+      </aside>
+
+      <div class="main">
+        <section class="main-block">
+          <div class="main-head"><span class="num">06</span><h2>Education</h2><span class="rule"></span></div>
+
+          <article class="entry">
+            <h3 class="entry-title">B.Sc. in Computer Science &amp; Engineering</h3>
+            <span class="entry-period">2025 — Present</span>
+            <div class="entry-org">Daffodil International University · Dhaka</div>
+            <div class="entry-detail">Coursework: programming, object-oriented programming, data structures, algorithms. Applying these foundations through individual software and hardware projects.</div>
+          </article>
+
+          <article class="entry">
+            <h3 class="entry-title">Higher Secondary Certificate (HSC), Science</h3>
+            <span class="entry-period">2021 — 2023</span>
+            <div class="entry-org">Notre Dame College · Dhaka Board</div>
+            <div class="entry-detail">GPA 5.00 · Member of Notre Dame Science Club and participant in the Annual Science Fair.</div>
+          </article>
+
+          <article class="entry">
+            <h3 class="entry-title">Secondary School Certificate (SSC), Science</h3>
+            <span class="entry-period">2016 — 2021</span>
+            <div class="entry-org">Shamsul Haque Khan School and College · Dhaka Board</div>
+            <div class="entry-detail">GPA 5.00</div>
+          </article>
+        </section>
+
+        <section class="main-block">
+          <div class="main-head"><span class="num">07</span><h2>Selected projects</h2><span class="rule"></span></div>
+
+          <article class="project">
+            <div class="project-top">
+              <h3 class="project-title">Huffman Hide &amp; Compress</h3>
+              <span class="project-status">Deployed · C++20</span>
+            </div>
+            <p class="project-desc">Huffman compression workbench with byte-level encode/decode, animated tree visualization, compression analytics, secure encrypted packages, and RGB-LSB image steganography. Includes Batch Lab, Secure Vault, and learning workflows. C++ core passes 250 property checks; best payload reduction reached 85% on test data.</p>
+            <div class="project-meta">
+              <span class="stack">C++20 · JavaScript · Web Crypto · CMake</span>
+              <span class="project-links"><a href="https://huffman-hide-shafin.onrender.com/#home">LIVE ↗</a><a href="https://github.com/rokon-shafin2974/huffman-hide-final">SOURCE ↗</a></span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <h3 class="project-title">Analysis Studio</h3>
+              <span class="project-status blue">Deployed · Full stack</span>
+            </div>
+            <p class="project-desc">Image-evaluation platform built as a DIU CSE individual project. Supports evaluator accounts, structured 1–10 ratings, per-person averages, administrative workflows, and export-oriented reporting. Cloud-first architecture persists deployed media across restarts.</p>
+            <div class="project-meta">
+              <span class="stack">Python · Flask · PostgreSQL · Cloudinary · Render</span>
+              <span class="project-links"><a href="https://shafin-face-rater.onrender.com/login.html">LIVE ↗</a></span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <h3 class="project-title">ADS1115 Digital Ammeter</h3>
+              <span class="project-status orange">Completed · Hardware</span>
+            </div>
+            <p class="project-desc">Digital current-measurement device built around an Arduino Nano, ADS1115 ADC, 0.1Ω shunt resistor, and 16×2 I2C LCD. Represents hands-on circuit design, ADC measurement, display integration, and practical electronics work.</p>
+            <div class="project-meta">
+              <span class="stack">Arduino Nano · ADS1115 · I2C LCD · Electronics</span>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>Md. Rokon Yeamony Shafin · Biodata</span>
+      <span><strong>Page 1 of 2</strong> · Profile · Education · Projects</span>
+    </footer>
+  </main>
+
+  <!-- ================= PAGE 2 ================= -->
+  <main class="sheet">
+    <header class="page2-header">
+      <div class="page2-brand">
+        <span class="mark">RS</span>
+        <span class="name">Md. Rokon Yeamony <em>Shafin</em></span>
+      </div>
+      <div class="page2-meta"><b>Biodata</b> · Page 2 of 2 · 2026</div>
+    </header>
+
+    <section class="main-block">
+      <div class="main-head"><span class="num">08</span><h2>Additional work &amp; roadmap</h2><span class="rule"></span></div>
+
+      <article class="project">
+        <div class="project-top">
+          <h3 class="project-title">Arduino &amp; Electronics Experiments</h3>
+          <span class="project-status orange">In progress · Hardware</span>
+        </div>
+        <p class="project-desc">Ongoing hands-on hardware learning: HC-05/HC-06 Bluetooth communication, relay control modules, sensor circuits, and measurement experiments on Arduino Uno/Nano. Individual ideas are kept separate from the completed ADS1115 Ammeter project.</p>
+        <div class="project-meta">
+          <span class="stack">Arduino · HC-05 · HC-06 · Relays · Sensors</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-top">
+          <h3 class="project-title">Personal Productivity App</h3>
+          <span class="project-status blue">Planned · Apps</span>
+        </div>
+        <p class="project-desc">Planned personal application combining todos, reminders, university routine, academic and skill tasks, monthly mini-project assignments, and progress history — backed by a database.</p>
+        <div class="project-meta">
+          <span class="stack">Python · HTML · CSS · Database</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-top">
+          <h3 class="project-title">Personal AI Assistant</h3>
+          <span class="project-status blue">Planned · AI</span>
+        </div>
+        <p class="project-desc">Planned cross-platform assistant for Windows and Fedora exploring local Ollama models, text and voice commands, modern UI, and OS-level actions.</p>
+        <div class="project-meta">
+          <span class="stack">Python · Ollama · Windows · Fedora · Voice</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="main-block">
+      <div class="main-head"><span class="num">09</span><h2>Design, events &amp; community</h2><span class="rule"></span></div>
+      <ul class="bullets">
+        <li><strong>Part-time backup designer</strong>, Notre Dame Science Club — graphic design for club events.</li>
+        <li><strong>Part-time backup designer</strong>, Narayanganj Student Association — graphic design support.</li>
+        <li><strong>Collaborated on college festivals</strong> including National Science Fest and Brain Rain — design &amp; on-the-day execution.</li>
+        <li><strong>Associate General Secretary</strong>, Notre Dame Annual Science Fest 2023 — <em>Honourable Mention</em></li>
+        <li><strong>Organizer</strong>, Notre Dame Annual Science Fest 2022 — <em>Organizing Award</em></li>
+        <li><strong>Volunteer</strong>, Notre Dame Annual Science Fest 2021 — <em>Volunteer Award</em></li>
+        <li><strong>Lifetime Member</strong>, Notre Dame Science Club; Annual Science Fair participant.</li>
+      </ul>
+    </section>
+
+    <section class="main-block">
+      <div class="main-head"><span class="num">10</span><h2>Awards &amp; recognition</h2><span class="rule"></span></div>
+      <div class="dual-grid">
+        <ul class="bullets">
+          <li>Honourable Mention — Notre Dame Annual Science Fest 2023</li>
+          <li>Organizing Award — Notre Dame Annual Science Fest 2022</li>
+          <li>Volunteer Award — Notre Dame Annual Science Fest 2021</li>
+        </ul>
+        <ul class="bullets">
+          <li>Lifetime Membership — Notre Dame Science Club (2023)</li>
+          <li>GPA 5.00 — HSC (Notre Dame College, 2023)</li>
+          <li>GPA 5.00 — SSC (Shamsul Haque Khan School and College, 2021)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="main-block">
+      <div class="main-head"><span class="num">11</span><h2>Reflection</h2><span class="rule"></span></div>
+      <div class="reflect-grid">
+        <article class="reflect">
+          <span class="reflect-num">01</span>
+          <div>
+            <h3>What I've learned so far</h3>
+            <p>Building software and hardware side-by-side taught me that the hardest parts aren't syntax — they're getting the boundaries right.</p>
+          </div>
+        </article>
+        <article class="reflect">
+          <span class="reflect-num">02</span>
+          <div>
+            <h3>What I'm working toward</h3>
+            <p>Deeper command of data structures and algorithms, competitive programming practice on Beecrowd and beyond, and shipping software that people other than me actually use.</p>
+          </div>
+        </article>
+        <article class="reflect">
+          <span class="reflect-num">03</span>
+          <div>
+            <h3>What I value in a team</h3>
+            <p>Clear communication, honest status updates, and code reviews that make everyone better.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="main-block">
+      <div class="main-head"><span class="num">12</span><h2>Quick reference</h2><span class="rule"></span></div>
+      <div class="dual-grid">
+        <div>
+          <div class="skill-label" style="margin-bottom:2.5mm">Best-fit roles</div>
+          <ul class="bullets">
+            <li>Software engineering internships</li>
+            <li>Full-stack / backend entry roles</li>
+            <li>Algorithms &amp; DSA-focused practice</li>
+            <li>Hardware / embedded side projects</li>
+          </ul>
+        </div>
+        <div>
+          <div class="skill-label" style="margin-bottom:2.5mm">Currently learning</div>
+          <ul class="bullets">
+            <li>Advanced Java &amp; OOP patterns</li>
+            <li>Data structures &amp; algorithms</li>
+            <li>Linux systems &amp; local AI (Ollama)</li>
+            <li>Full-stack deployment (Render, Neon, Cloudinary)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="signature">
+      <div>
+        <div class="sig-label">Signed</div>
+        <div class="sig-name">Md. Rokon Yeamony <em>Shafin</em></div>
+      </div>
+      <div class="sig-line"></div>
+      <div>
+        <div class="sig-label" style="text-align:right">Date</div>
+        <div class="sig-date">2026 · Dhaka, Bangladesh</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Md. Rokon Yeamony Shafin · Biodata</span>
+      <span><strong>Page 2 of 2</strong> · Work · Achievements · Reflection</span>
+    </footer>
+  </main>
+
+</body>
+</html>

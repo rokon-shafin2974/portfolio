@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0e131b">
+<meta name="color-scheme" content="dark light">
+<title>Md. Rokon Yeamony Shafin — CSE Student & Builder</title>
+<meta name="description" content="Md. Rokon Yeamony Shafin is a CSE student at Daffodil International University who builds software, explores algorithms and experiments with electronics. Explore selected work and an interactive Huffman lab.">
+<meta name="author" content="Md. Rokon Yeamony Shafin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Md. Rokon Yeamony Shafin — CSE Student & Builder">
+<meta property="og:description" content="Explore software, algorithm and hardware projects by Md. Rokon Yeamony Shafin, then try Huffman coding in an interactive browser lab.">
+<meta property="og:image" content="https://github.com/rokon-shafin2974.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230e131b'/%3E%3Ctext x='50' y='64' text-anchor='middle' font-size='36' font-family='Arial' fill='%23ff8058'%3ERS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Md. Rokon Yeamony Shafin","identifier":"252-15-447","jobTitle":"Computer Science & Engineering Student","affiliation":{"@type":"CollegeOrUniversity","name":"Daffodil International University"},"sameAs":["https://github.com/rokon-shafin2974","https://www.linkedin.com/in/md-rokon-yeamony-shafin-a51825408/"]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header id="header" class="header">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark">RYS</span>
+      <span><strong>Rokon Yeamony Shafin</strong><small>CSE · Builder</small></span>
+    </a>
+    <nav id="nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#work">Projects</a>
+      <a href="#playground">Try the lab</a>
+      <a href="#videocv">Video CV</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-cv" href="output/pdf/Rokon_Shafin_CV.pdf" download>Download CV <span>↓</span></a>
+      <button id="themeBtn" class="icon-button" type="button" aria-label="Switch to dark theme">◐ <span>Theme</span></button>
+      <button id="menuBtn" class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </header>
+
+  <main id="top" tabindex="-1">
+    <section class="hero" id="main-content" tabindex="-1">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="availability"><span></span> CSE student · Open to learning & collaboration</div>
+          <p class="hero-eyebrow">COMPUTER SCIENCE & ENGINEERING · DIU</p>
+          <h1 class="hero-title">
+            Ideas become<br><em>things you</em><br>can try<span class="title-period">.</span>
+          </h1>
+          <p class="hero-lead">I'm <strong>Md. Rokon Yeamony Shafin</strong>, a CSE student at Daffodil International University. I turn algorithms and ideas into useful software, visual experiments, and hardware that works.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore my work <span>↗</span></a>
+            <a class="button secondary" href="#playground">Try the compression lab</a>
+            <a class="button text-button" href="output/pdf/Rokon_Shafin_CV.pdf" download>Download CV <span>↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <span><b>DIU</b><small>Computer Science</small></span>
+            <span><b>Software + hardware</b><small>Things I build</small></span>
+            <span><b>Dhaka</b><small>Bangladesh</small></span>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal">
+          <div class="stage-window">
+            <div class="stage-bar">
+              <i></i><i></i><i></i>
+              <span class="stage-file" id="stageFile">huffman_compress.cpp</span>
+              <span class="stage-status"><span class="stage-dot"></span>project notes</span>
+            </div>
+            <pre class="stage-code" id="stageCode"></pre>
+            <div class="stage-footer">
+              <span>Selected work</span>
+              <span>C++ · Java · Arduino</span>
+            </div>
+          </div>
+          <div class="hero-portrait">
+            <img id="profilePhoto" src="assets/profile.jpg" alt="Md. Rokon Yeamony Shafin" loading="eager">
+          </div>
+          <div class="hero-chip hero-chip-1"><b>3 completed builds</b><span>with work in progress</span></div>
+        </div>
+      </div>
+
+      <div class="hero-tags">
+        <div class="ticker"><div id="tickerTrack"></div></div>
+      </div>
+    </section>
+
+    <section class="showcase reveal" aria-label="Selected project highlights">
+      <div class="container showcase-inner">
+        <p class="showcase-eyebrow">A FEW PROJECT HIGHLIGHTS</p>
+        <h2 class="showcase-title">Built to learn. <em>Made to be explored.</em></h2>
+        <div class="showcase-stats" id="showcaseStats"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <header class="editorial-head">
+        <span class="editorial-num">01</span>
+        <div>
+          <p class="eyebrow">ABOUT</p>
+          <h2 class="editorial-title">Curious about systems.<br><em>Focused on making them work.</em></h2>
+        </div>
+      </header>
+      <div class="about-layout">
+        <div class="about-copy">
+          <p>I'm studying Computer Science & Engineering at Daffodil International University and strengthening my foundations in programming, OOP, data structures and algorithms. My projects let me apply those ideas to software, algorithms and small hardware systems.</p>
+          <p>I document where each build stands. The work ranges from <strong>deployed web apps</strong> to <strong>electronics experiments</strong> and ideas on my roadmap. You can <a href="#playground" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px">try the Huffman compression lab</a> to see one of them running in your browser.</p>
+          <div class="quote-card">
+            <span>"</span>
+            <p>Learn → build → break → debug → document → improve.</p>
+          </div>
+        </div>
+        <div class="about-facts">
+          <div><small>University</small><strong>Daffodil International University</strong><span>Department of CSE</span></div>
+          <div><small>Stage</small><strong>Semester 5</strong><span>Individual projects + CS fundamentals</span></div>
+          <div><small>Learning</small><strong>Java · OOP · DSA</strong><span>Plus C/C++, Python, web, Linux, AI tooling</span></div>
+          <div><small>Outside code</small><strong>Arduino · Electronics</strong><span>Hardware experimentation, system curiosity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section container reveal">
+      <header class="editorial-head">
+        <span class="editorial-num">02</span>
+        <div>
+          <p class="eyebrow">EDUCATION</p>
+          <h2 class="editorial-title">From <em>school</em> to CSE —<br>the academic path.</h2>
+        </div>
+      </header>
+      <div class="edu-timeline" id="eduTimeline"></div>
+      <div class="edu-meta academic-meta">
+        <article class="edu-results">
+          <h3>Academic results</h3>
+          <div id="academicResults" class="results-grid"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section container reveal">
+      <header class="editorial-head">
+        <span class="editorial-num">03</span>
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2 class="editorial-title">Real builds, <em>honest stages</em>.</h2>
+        </div>
+      </header>
+
+      <div class="legend" aria-label="Project status key">
+        <span><i class="dot shipped"></i>Completed / deployed</span>
+        <span><i class="dot progress"></i>Incomplete / experimental</span>
+        <span><i class="dot planned"></i>Planned / not built</span>
+      </div>
+
+      <div class="project-toolbar">
+        <div id="filters" class="filters"></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="projectSearch" type="search" aria-label="Search projects by name, technology or idea" placeholder="Search projects, stacks or ideas…" autocomplete="off"></label>
+      </div>
+
+      <div id="projectGrid" class="project-grid"></div>
+      <p id="resultCount" class="result-count" aria-live="polite"></p>
+    </section>
+
+    <section id="playground" class="section container reveal playground-section">
+      <header class="editorial-head">
+        <span class="editorial-num">04</span>
+        <div>
+          <p class="eyebrow">INTERACTIVE PROJECT DEMO</p>
+          <h2 class="editorial-title">Make the algorithm<br><em>work on your words.</em></h2>
+          <p class="section-intro">Try Huffman coding in your browser. Type a message, inspect its codes, and decode the bitstream. Nothing is uploaded.</p>
+        </div>
+      </header>
+      <div class="lab-shell">
+        <div class="lab-topline"><span><i></i> LOCAL COMPRESSION LAB</span><span>UTF-8 · HUFFMAN CODING</span></div>
+        <div class="lab-layout">
+          <div class="lab-input-panel">
+            <label for="huffmanInput">Your message <span id="inputByteCount">0 bytes</span></label>
+            <textarea id="huffmanInput" maxlength="512" spellcheck="false" placeholder="Type or paste a short message…" aria-describedby="labHint"></textarea>
+            <p class="lab-hint" id="labHint">Try a sample or enter up to 512 characters. Repeated bytes get shorter codes.</p>
+            <div class="sample-row" aria-label="Load a sample message">
+              <button type="button" data-sample="BANANA_BANDANA">BANANA</button>
+              <button type="button" data-sample="mississippi river">mississippi river</button>
+              <button type="button" data-sample="Huffman coding assigns short bit strings to frequent symbols. Huffman coding assigns short bit strings to frequent symbols.">Repeated text</button>
+              <button type="button" data-sample="">Clear</button>
+            </div>
+            <div class="lab-metrics">
+              <div><span>Input</span><strong id="rawBytes">0 B</strong></div>
+              <div><span>Encoded payload</span><strong id="encodedBits">0 bits</strong></div>
+              <div><span>Payload change</span><strong id="payloadChange">—</strong></div>
+            </div>
+            <p class="lab-caveat">Bit payload only. Tree metadata, headers and byte padding are excluded, so this is not a full archive-size comparison.</p>
+          </div>
+          <div class="lab-output-panel">
+            <div class="lab-output-head"><h3>Huffman code table</h3><span id="symbolCount">0 symbols</span></div>
+            <div class="code-table-wrap">
+              <table class="code-table">
+                <thead><tr><th scope="col">Byte</th><th scope="col">Count</th><th scope="col">Code</th></tr></thead>
+                <tbody id="huffmanCodes"><tr><td colspan="3">Enter a message to build the tree.</td></tr></tbody>
+              </table>
+            </div>
+            <div class="bitstream-head"><h3>Encoded bitstream</h3><button id="copyBits" type="button" disabled>Copy bits</button></div>
+            <pre id="huffmanBitstream" class="bitstream">Your encoded bits will appear here.</pre>
+            <div class="decode-row"><button id="decodeBits" class="button secondary" type="button" disabled>Decode it</button><span id="decodeStatus" role="status"></span></div>
+            <div id="decodedPanel" class="decoded-panel" hidden><span>DECODED MESSAGE</span><p id="decodedText"></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials" class="section container reveal">
+      <header class="editorial-head">
+        <span class="editorial-num">05</span>
+        <div>
+          <p class="eyebrow">DESIGN, EVENTS &amp; COMMUNITY</p>
+          <h2 class="editorial-title">Making ideas visible.<br><em>Showing up together.</em></h2>
+        </div>
+      </header>
+      <div class="credentials-layout">
+        <article class="credentials-card">
+          <header><h3>Design, events &amp; community</h3><span id="certCount"></span></header>
+          <div id="certList" class="cert-list"></div>
+        </article>
+        <article class="credentials-card">
+          <header><h3>Problem-solving practice</h3><span>Learning log</span></header>
+          <div id="cpGrid" class="cp-grid"></div>
+          <p class="cp-note">Updated manually from the platforms listed above.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="videocv" class="section container reveal">
+      <header class="editorial-head">
+        <span class="editorial-num">06</span>
+        <div>
+          <p class="eyebrow">VIDEO CV</p>
+          <h2 class="editorial-title">Hear me introduce<br><em>the work in person.</em></h2>
+          <p class="section-intro">A short walkthrough of who I am, what I build, and how I approach problems.</p>
+        </div>
+      </header>
+
+      <div class="video-cv" id="videoCv" data-video-url="https://youtu.be/CwYQg25vEKk" data-video-src="">
+        <div class="video-placeholder" role="region" aria-label="Video CV — coming soon">
+          <div class="video-placeholder-inner">
+            <div class="video-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6 4 20 12 6 20 6 4" fill="currentColor" stroke="none" opacity=".85"/>
+              </svg>
+            </div>
+            <div class="video-copy">
+              <span class="video-tag">COMING SOON</span>
+              <h3>A 60–90 second intro video is in the works.</h3>
+              <p>I'm recording a short video CV covering my projects, my learning journey, and what I'm looking to build next. Check back soon — or reach out in the meantime.</p>
+              <div class="video-meta">
+                <span><b>Format</b> · 16:9 · 60–90s</span>
+                <span><b>Topics</b> · Projects · Approach · Goals</span>
+              </div>
+              <a class="button secondary" href="#contact">Get in touch ↗</a>
+            </div>
+          </div>
+          <div class="video-scanline" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="engineering">
+      <header class="editorial-head">
+        <span class="editorial-num">07</span>
+        <div>
+          <p class="eyebrow">EVIDENCE</p>
+          <h2 class="editorial-title">What the projects<br><em>taught me</em>.</h2>
+        </div>
+      </header>
+      <div class="evidence-grid">
+        <article><small>HUFFMAN</small><strong>85%</strong><p>Measured payload reduction on a skewed 10KB dataset in the documented benchmark environment.</p></article>
+        <article><small>HUFFMAN</small><strong>250</strong><p>Randomized/property tests passed in the project report's validation workflow.</p></article>
+        <article><small>ANALYSIS STUDIO</small><strong>Cloud-first</strong><p>Images persisted through Cloudinary while application data uses PostgreSQL/Neon, avoiding Render's ephemeral disk problem.</p></article>
+        <article><small>ADS1115 AMMETER</small><strong>Done</strong><p>Arduino Nano hardware project combining ADS1115 measurement, 0.1Ω shunt and a 16×2 I2C LCD.</p></article>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="skills">
+      <header class="editorial-head">
+        <span class="editorial-num">08</span>
+        <div>
+          <p class="eyebrow">SKILLS</p>
+          <h2 class="editorial-title">Fundamentals first,<br><em>tools second</em>.</h2>
+        </div>
+      </header>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <section class="section container reveal" id="github">
+      <header class="editorial-head">
+        <span class="editorial-num">09</span>
+        <div>
+          <p class="eyebrow">GITHUB</p>
+          <h2 class="editorial-title">Public work lives<br><em>on GitHub</em>.</h2>
+        </div>
+      </header>
+      <div class="github-panel">
+        <div>
+          <p class="eyebrow">REPOSITORIES</p>
+          <h2>Explore the source.</h2>
+          <p id="githubStatus">Loading public GitHub profile data…</p>
+          <a class="button primary" href="https://github.com/rokon-shafin2974" target="_blank" rel="noopener noreferrer">Open GitHub ↗</a>
+        </div>
+        <div id="githubStats" class="github-stats">
+          <div><b>—</b><span>Repos</span></div>
+          <div><b>—</b><span>Stars</span></div>
+          <div><b>—</b><span>Followers</span></div>
+          <div><b>—</b><span>Following</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal contact-section">
+      <header class="editorial-head">
+        <span class="editorial-num">10</span>
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2 class="editorial-title">Let's talk about<br>something <em>worth building</em>.</h2>
+        </div>
+      </header>
+      <div class="contact-layout">
+        <div>
+          <p class="contact-lead">For student opportunities, collaboration, project feedback or technology conversations, email is the fastest route.</p>
+          <a class="email-link" href="mailto:shafinahosan111@gmail.com">shafinahosan111@gmail.com</a>
+          <div class="socials">
+            <a href="https://github.com/rokon-shafin2974" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/md-rokon-yeamony-shafin-a51825408/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <button id="copyEmail" type="button" data-copy="shafinahosan111@gmail.com">Copy email</button>
+          </div>
+        </div>
+        <form id="contactForm" novalidate>
+          <label>Name<input name="name" required autocomplete="name" placeholder="Your name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+          <label>Message<textarea name="message" rows="5" required placeholder="What would you like to discuss?"></textarea></label>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Send message ↗</button>
+            <button id="openGmailBtn" class="button secondary" type="button">Open Gmail ↗</button>
+          </div>
+          <p id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>Md. Rokon Yeamony Shafin</strong><span>CSE student · builder · experimenter</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/rokon-shafin2974" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/md-rokon-yeamony-shafin-a51825408/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="output/pdf/Rokon_Shafin_CV.pdf" download>Download CV (PDF)</a>
+        <a href="biodata.html">Open / print Biodata</a>
+        <button id="printBtn" type="button">Print</button>
+      </div>
+      <small>© <span id="year"></span> Rokon Shafin · Honest project status · Living portfolio</small>
+    </div>
+  </footer>
+
+  <div id="projectModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <article class="project-modal">
+      <button class="modal-close" data-close type="button" aria-label="Close">×</button>
+      <div id="projectModalContent"></div>
+    </article>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>

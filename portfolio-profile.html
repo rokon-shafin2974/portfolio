@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101722">
+  <meta name="description" content="CV of Md. Rokon Yeamony Shafin — Computer Science and Engineering student, software builder, and electronics enthusiast.">
+  <title>Md. Rokon Yeamony Shafin — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      color-scheme:light;
+      --ink:#17212d;--muted:#536170;--soft:#738092;--line:#dce3eb;
+      --paper:#fff;--wash:#f4f7fa;--navy:#101722;--coral:#ff8058;--blue:#5379ff;
+      --mono:'DM Mono',monospace;--display:'Space Grotesk',sans-serif;--body:'DM Sans',sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{background:#e9edf2}
+    body{margin:0;color:var(--ink);font:11px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+
+    /* Screen toolbar */
+    .toolbar{
+      width:min(210mm,calc(100% - 28px));margin:18px auto 10px;
+      display:flex;justify-content:flex-end;gap:8px;align-items:center
+    }
+    .print-button{
+      display:inline-flex;align-items:center;border:0;border-radius:999px;
+      background:var(--navy);color:#fff;padding:10px 16px;
+      font:600 12px var(--body);cursor:pointer;text-decoration:none
+    }
+    .print-button:hover{background:#26364b}
+    .toolbar-hint{color:#536170;font:11px var(--body);margin-right:auto}
+
+    /* A4 sheet — screen only */
+    .sheet{
+      width:210mm;
+      min-height:297mm;
+      margin:0 auto 24px;
+      padding:12mm 13mm;
+      background:var(--paper);
+      box-shadow:0 16px 55px #14243a1c;
+      position:relative;
+      overflow:hidden;
+    }
+    .sheet:before{
+      position:absolute;content:"";height:3px;inset:0 0 auto;
+      background:linear-gradient(90deg,var(--coral),var(--blue))
+    }
+
+    /* Masthead */
+    .masthead{
+      display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;
+      padding-bottom:4.5mm;border-bottom:1.5px solid var(--line)
+    }
+    .identity{display:flex;align-items:center;gap:15px;min-width:0}
+    .portrait{
+      width:25mm;height:30mm;object-fit:cover;object-position:center 22%;
+      border-radius:5px;background:var(--wash);border:1px solid var(--line)
+    }
+    .name{font:700 24px/.98 var(--display);letter-spacing:-.055em;margin:0}
+    .name span{color:var(--blue)}
+    .role{margin:6px 0 0;color:var(--muted);font-size:12px;font-weight:600}
+    .tagline{margin:4px 0 0;color:var(--soft);font-size:10.5px}
+    .contact{display:grid;gap:3px;text-align:right;font-size:10px;color:var(--muted)}
+    a{color:inherit;text-decoration:none}
+    .contact a:hover,.project-links a:hover{
+      text-decoration:underline;text-decoration-color:var(--coral);text-underline-offset:3px
+    }
+    .section-index,.period,.skill-label{font-family:var(--mono)}
+
+    /* Intro */
+    .intro{
+      display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start;
+      padding:4.5mm 0 4mm
+    }
+    .intro p{margin:0;max-width:130mm;color:var(--muted);font-size:11px;line-height:1.55}
+    .intro p strong{color:var(--ink)}
+    .intro-mark{
+      font:500 9px var(--mono);letter-spacing:.1em;text-transform:uppercase;
+      color:var(--blue);white-space:nowrap;padding-top:3px
+    }
+
+    /* Two-column layout */
+    .layout{display:grid;grid-template-columns:57mm minmax(0,1fr);gap:9mm}
+    .sidebar,.main{min-width:0}
+    .block{padding:0 0 3.5mm;margin:0 0 3.5mm;border-bottom:1px solid var(--line)}
+    .block:last-child{border:0;margin-bottom:0;padding-bottom:0}
+
+    .section-heading{
+      display:flex;gap:8px;align-items:baseline;
+      margin:0 0 2.5mm;padding-bottom:1.6mm;border-bottom:1px solid var(--line)
+    }
+    .section-index{font-size:8.5px;color:var(--coral);font-weight:500}
+    .section-heading h2{
+      font:700 12.5px/1.1 var(--display);letter-spacing:.035em;
+      text-transform:uppercase;margin:0
+    }
+
+    /* Skills */
+    .skill-group{margin:0 0 2.5mm}
+    .skill-group:last-child{margin-bottom:0}
+    .skill-label{
+      display:block;font-size:8px;letter-spacing:.08em;text-transform:uppercase;
+      color:var(--soft);margin-bottom:4px
+    }
+    .chips{display:flex;flex-wrap:wrap;gap:3px}
+    .chips span{
+      display:inline-flex;padding:2px 6px;background:var(--wash);
+      border:1px solid #e5eaf0;border-radius:3px;color:#344354;
+      font-size:9px;line-height:1.2
+    }
+
+    /* Contact */
+    .contact-list{display:grid;gap:5px}
+    .contact-item{
+      display:grid;grid-template-columns:14mm minmax(0,1fr);gap:4px;
+      font-size:10px;line-height:1.4
+    }
+    .contact-item b{
+      font:500 8px var(--mono);letter-spacing:.06em;text-transform:uppercase;
+      color:var(--soft);padding-top:2px
+    }
+    .contact-item span,.contact-item a{overflow-wrap:anywhere}
+
+    /* Languages */
+    .language{
+      display:flex;justify-content:space-between;gap:8px;
+      margin:0 0 5px;color:var(--muted);font-size:10.5px
+    }
+    .language b{color:var(--ink);font-weight:600}
+    .language:last-child{margin-bottom:0}
+
+    /* Entries */
+    .entry{
+      position:relative;padding:0 0 2.8mm;margin:0 0 2.8mm;
+      border-bottom:1px solid #edf0f4;break-inside:avoid
+    }
+    .entry:last-child{padding-bottom:0;margin-bottom:0;border:0}
+    .entry-top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+    .entry-title{font:600 11.5px/1.3 var(--display);margin:0}
+    .period{flex:none;color:var(--soft);font-size:8.5px;white-space:nowrap}
+    .org{margin:2px 0 0;color:#3e66db;font-weight:600;font-size:10.5px}
+    .details{margin:3px 0 0;color:var(--muted);font-size:10px;line-height:1.45}
+
+    /* Bullets */
+    .bullets{list-style:none;margin:3px 0 0;padding:0}
+    .bullets li{
+      position:relative;padding-left:11px;margin-top:3px;
+      color:var(--muted);font-size:10px;line-height:1.45
+    }
+    .bullets li:before{
+      content:"";position:absolute;left:0;top:.6em;
+      width:3.5px;height:3.5px;border-radius:50%;background:var(--coral)
+    }
+
+    /* Projects */
+    .project{
+      padding:0 0 2.8mm;margin:0 0 2.8mm;
+      border-bottom:1px solid #edf0f4;break-inside:avoid
+    }
+    .project:last-child{padding-bottom:0;margin-bottom:0;border:0}
+    .project-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+    .project h3{font:600 12px/1.25 var(--display);margin:0}
+    .status{
+      font:500 8px var(--mono);letter-spacing:.06em;text-transform:uppercase;
+      color:#36734e;white-space:nowrap
+    }
+    .project p{margin:3px 0 0;color:var(--muted);font-size:10px;line-height:1.45}
+    .project-meta{
+      display:flex;justify-content:space-between;gap:8px;
+      align-items:flex-end;margin-top:3px
+    }
+    .stack{font:8.5px/1.35 var(--mono);color:#68788b}
+    .project-links{display:flex;gap:8px;flex:none;font:500 8.5px var(--mono);color:#3e66db}
+    .leadership li{margin-top:3px}
+
+    /* Footer */
+    .footer{
+      position:absolute;left:13mm;right:13mm;bottom:7mm;
+      display:flex;justify-content:space-between;
+      padding-top:2.5mm;border-top:1px solid var(--line);
+      font:8.5px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--soft)
+    }
+    .footer strong{color:var(--ink);font-weight:500}
+
+    /* Mobile */
+    @media(max-width:760px){
+      html{background:var(--paper)}
+      .toolbar{width:auto;margin:10px 14px;flex-wrap:wrap}
+      .toolbar-hint{width:100%;margin-bottom:6px}
+      .sheet{
+        width:100%;min-height:0;margin:0;
+        padding:22px 18px 30px;box-shadow:none
+      }
+      .masthead{grid-template-columns:1fr}
+      .contact{text-align:left;grid-template-columns:1fr 1fr;gap:5px 12px}
+      .identity{align-items:flex-start}
+      .portrait{width:66px;height:78px}
+      .name{font-size:clamp(21px,7vw,27px)}
+      .intro{grid-template-columns:1fr;gap:6px;padding:18px 0}
+      .layout{grid-template-columns:1fr;gap:0}
+      .sidebar{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+      .sidebar .block{margin-bottom:14px;padding-bottom:14px}
+      .main .block{margin-bottom:16px;padding-bottom:16px}
+      .footer{position:static;margin-top:20px}
+      .entry-top{align-items:flex-start}
+      .period{font-size:8px}
+    }
+
+    /* ============ PRINT — locked to one A4 page ============ */
+    @page{size:A4 portrait;margin:0}
+    @media print{
+      html,body{
+        width:210mm;height:297mm;margin:0;padding:0;
+        background:#fff;
+        print-color-adjust:exact;-webkit-print-color-adjust:exact;
+        font-size:10.5px;line-height:1.45
+      }
+      .toolbar{display:none !important}
+
+      /* The sheet IS the page. Padding is the only margin. */
+      .sheet{
+        width:210mm !important;
+        height:297mm !important;
+        min-height:297mm !important;
+        margin:0 !important;
+        padding:11mm 13mm 10mm !important;
+        box-shadow:none !important;
+        overflow:hidden !important;
+        position:relative !important;
+        page-break-after:avoid;
+        page-break-inside:avoid;
+      }
+      .sheet:before{
+        inset:0 13mm auto !important;
+        height:1.2mm !important
+      }
+
+      /* Lock the two-column grid */
+      .layout{
+        display:grid !important;
+        grid-template-columns:57mm minmax(0,1fr) !important;
+        gap:9mm !important
+      }
+      .sidebar,.main{min-width:0 !important}
+
+      /* Masthead grid locked */
+      .masthead{
+        display:grid !important;
+        grid-template-columns:1fr auto !important;
+        gap:14px !important
+      }
+      .identity{
+        display:flex !important;
+        flex-direction:row !important;
+        align-items:center !important;
+        gap:15px !important
+      }
+
+      /* Intro grid locked */
+      .intro{
+        display:grid !important;
+        grid-template-columns:1fr auto !important;
+        gap:18px !important
+      }
+
+      /* Contact still right-aligned */
+      .contact{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        text-align:right !important;
+        gap:3px !important
+      }
+
+      /* Footer pinned to bottom of sheet */
+      .footer{
+        position:absolute !important;
+        left:13mm !important;right:13mm !important;bottom:8mm !important;
+        margin-top:0 !important
+      }
+
+      /* Prevent anything from splitting */
+      .entry,.project,.block,.section-heading,.masthead,.intro{
+        break-inside:avoid !important;
+        page-break-inside:avoid !important
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <span class="toolbar-hint">After editing: press <strong>Print / Save as PDF</strong> and overwrite <code>portfolio-profile.pdf</code> in your folder.</span>
+    <button class="print-button" type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="sheet">
+    <header class="masthead">
+      <div class="identity">
+        <img class="portrait" src="assets/profile.jpg" alt="Md. Rokon Yeamony Shafin">
+        <div>
+          <h1 class="name">Md. Rokon Yeamony<br><span>Shafin</span></h1>
+          <p class="role">Computer Science &amp; Engineering Student</p>
+          <p class="tagline">Software, algorithms &amp; practical electronics</p>
+        </div>
+      </div>
+      <div class="contact" aria-label="Contact links">
+        <a href="mailto:shafinahosan111@gmail.com">shafinahosan111@gmail.com</a>
+        <a href="https://github.com/rokon-shafin2974">github.com/rokon-shafin2974</a>
+        <a href="https://www.linkedin.com/in/md-rokon-yeamony-shafin-a51825408/">LinkedIn profile</a>
+        <span>Dhaka, Bangladesh</span>
+      </div>
+    </header>
+
+    <section class="intro" aria-label="Profile summary">
+      <p><strong>CSE student at Daffodil International University</strong> who learns by building. I apply programming and algorithm fundamentals to working software and electronics projects — from a deployed evaluation platform to a C++20 Huffman workbench and an Arduino digital ammeter.</p>
+      <span class="intro-mark">Profile · 2026</span>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="block">
+          <header class="section-heading"><span class="section-index">01</span><h2>Skills</h2></header>
+          <div class="skill-group"><span class="skill-label">Programming</span><div class="chips"><span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span></div></div>
+          <div class="skill-group"><span class="skill-label">CS foundations</span><div class="chips"><span>OOP</span><span>Data structures</span><span>Algorithms</span></div></div>
+          <div class="skill-group"><span class="skill-label">Web &amp; data</span><div class="chips"><span>HTML</span><span>CSS</span><span>Flask</span><span>PostgreSQL</span></div></div>
+          <div class="skill-group"><span class="skill-label">Tools</span><div class="chips"><span>Git</span><span>Linux</span><span>CMake</span><span>Render</span><span>Cloudinary</span></div></div>
+          <div class="skill-group"><span class="skill-label">Electronics</span><div class="chips"><span>Arduino</span><span>ADS1115</span><span>HC-05 / 06</span><span>Relays</span></div></div>
+          <div class="skill-group"><span class="skill-label">Design</span><div class="chips"><span>Graphic design</span></div></div>
+        </section>
+
+        <section class="block">
+          <header class="section-heading"><span class="section-index">02</span><h2>Contact</h2></header>
+          <div class="contact-list">
+            <div class="contact-item"><b>Email</b><a href="mailto:shafinahosan111@gmail.com">shafinahosan111@gmail.com</a></div>
+            <div class="contact-item"><b>University</b><span>Daffodil International University</span></div>
+            <div class="contact-item"><b>Student ID</b><span>252-15-447</span></div>
+            <div class="contact-item"><b>Portfolio</b><a href="index.html">View portfolio</a></div>
+          </div>
+        </section>
+
+        <section class="block">
+          <header class="section-heading"><span class="section-index">03</span><h2>Languages</h2></header>
+          <p class="language"><b>Bengali</b><span>Native</span></p>
+          <p class="language"><b>English</b><span>Working proficiency</span></p>
+          <p class="language"><b>Hindi</b><span>Conversational</span></p>
+        </section>
+
+        <section class="block">
+          <header class="section-heading"><span class="section-index">04</span><h2>Problem solving</h2></header>
+          <p class="details"><strong>Beecrowd:</strong> 30+ problems solved.</p>
+          <p class="details" style="margin-top:4px">Ongoing DSA practice for coding rounds.</p>
+        </section>
+      </aside>
+
+      <div class="main">
+        <section class="block education">
+          <header class="section-heading"><span class="section-index">05</span><h2>Education</h2></header>
+          <article class="entry">
+            <div class="entry-top"><h3 class="entry-title">B.Sc. in Computer Science &amp; Engineering</h3><span class="period">2025 — Present</span></div>
+            <p class="org">Daffodil International University · Dhaka</p>
+            <p class="details">Coursework: programming, OOP, data structures, algorithms.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-top"><h3 class="entry-title">Higher Secondary Certificate (HSC), Science</h3><span class="period">2021 — 2023</span></div>
+            <p class="org">Notre Dame College · Dhaka Board</p>
+            <p class="details">GPA 5.00 · Notre Dame Science Club member.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-top"><h3 class="entry-title">Secondary School Certificate (SSC), Science</h3><span class="period">2016 — 2021</span></div>
+            <p class="org">Shamsul Haque Khan School and College · Dhaka Board</p>
+            <p class="details">GPA 5.00</p>
+          </article>
+        </section>
+
+        <section class="block">
+          <header class="section-heading"><span class="section-index">06</span><h2>Selected projects</h2></header>
+          <article class="project">
+            <div class="project-top"><h3>Huffman Hide &amp; Compress</h3><span class="status">Deployed · C++20</span></div>
+            <p>Huffman compression workbench with byte-level encode/decode, animated tree visualization, secure encrypted packages, and RGB-LSB image steganography. 250 property checks passing; 85% best payload reduction.</p>
+            <div class="project-meta"><span class="stack">C++20 · JavaScript · Web Crypto · CMake</span><span class="project-links"><a href="https://huffman-hide-shafin.onrender.com/#home">LIVE ↗</a><a href="https://github.com/rokon-shafin2974/huffman-hide-final">SOURCE ↗</a></span></div>
+          </article>
+          <article class="project">
+            <div class="project-top"><h3>Analysis Studio</h3><span class="status">Deployed · Full stack</span></div>
+            <p>Image-evaluation platform built as a DIU CSE individual project. Evaluator accounts, structured 1–10 ratings, per-person averages, admin workflows, and export-oriented reporting.</p>
+            <div class="project-meta"><span class="stack">Python · Flask · PostgreSQL · Cloudinary · Render</span><span class="project-links"><a href="https://shafin-face-rater.onrender.com/login.html">LIVE ↗</a></span></div>
+          </article>
+          <article class="project">
+            <div class="project-top"><h3>ADS1115 Digital Ammeter</h3><span class="status">Completed · Hardware</span></div>
+            <p>Digital current-measurement device using Arduino Nano, ADS1115 ADC, 0.1Ω shunt resistor, and 16×2 I2C LCD.</p>
+            <div class="project-meta"><span class="stack">Arduino Nano · ADS1115 · I2C LCD · Electronics</span></div>
+          </article>
+        </section>
+
+        <section class="block leadership">
+          <header class="section-heading"><span class="section-index">07</span><h2>Design &amp; community</h2></header>
+          <ul class="bullets">
+            <li>Part-time backup designer, Notre Dame Science Club &amp; Narayanganj Student Association.</li>
+            <li>Collaborated on college festivals including National Science Fest and Brain Rain.</li>
+            <li>Associate General Secretary, Notre Dame Annual Science Fest 2023 — Honourable Mention.</li>
+            <li>Organizer, Notre Dame Annual Science Fest 2022 — Organizing Award.</li>
+            <li>Volunteer, Notre Dame Annual Science Fest 2021 — Volunteer Award.</li>
+            <li>Lifetime Member, Notre Dame Science Club.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer"><span>Md. Rokon Yeamony Shafin · CV</span><span><strong>Portfolio</strong> · Software / Algorithms / Electronics</span></footer>
+  </main>
+</body>
+</html>
